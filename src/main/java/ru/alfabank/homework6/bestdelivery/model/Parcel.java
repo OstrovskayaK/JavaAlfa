@@ -45,7 +45,7 @@ public class Parcel {
 
     // расчет стоимости
     public double calculateDeliveryPrice() {
-        double deliveryPrice = 100 + parcelWeight*300;
+        double deliveryPrice = 100 + parcelWeight*30;
         return deliveryPrice;
     }
 

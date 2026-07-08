@@ -11,7 +11,7 @@ public class ExpressParcel extends Parcel {
     // считаем стоимость быстрой доставки
     @Override
     public double calculateDeliveryPrice() {
-        if (deliveryHours > 24) {
+        if (deliveryHours < 24) {
             return super.calculateDeliveryPrice() + 500;
         } else {
             return super.calculateDeliveryPrice();
