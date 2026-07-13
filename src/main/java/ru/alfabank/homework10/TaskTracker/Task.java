@@ -15,7 +15,7 @@ public class Task {
     }
 
     // получаем ее статус
-    private boolean getStatus() {
+    public boolean getStatus() {
         return this.taskStatus;
     }
 

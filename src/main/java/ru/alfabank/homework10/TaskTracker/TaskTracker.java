@@ -26,4 +26,18 @@ public class TaskTracker {
             task.showTaskInfo();
         }
     }
+    //выводим статистику
+    public void showStatistics() {
+        int allTasks = tasks.size();
+        int complitedTasks = 0;
+        for (Task task : tasks) {
+            if (task.getStatus()) {
+                complitedTasks++;
+            }
+        }
+int unfinishedTasks = allTasks - complitedTasks;
+        System.out.println("Total tasks: " + allTasks);
+        System.out.println("Finished tasks: " + complitedTasks);
+        System.out.println("Unfinished tasks: " + unfinishedTasks);
+    }
 }
