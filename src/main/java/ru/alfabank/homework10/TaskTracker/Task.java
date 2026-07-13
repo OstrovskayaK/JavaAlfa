@@ -1,4 +1,4 @@
-package ru.alfabank.homework10.TaskTracker;
+package ru.alfabank.homework10.tasktracker;
 
 public class Task {
 }
