@@ -24,4 +24,14 @@ public class Task {
         return this.taskName;
     }
 
+    // выводим инфо о задаче
+    public void showTaskInfo() {
+        String statusMark;
+        if (this.taskStatus) {
+            statusMark = "[x]";
+        } else {
+            statusMark = "[]";
+        }
+        System.out.println(statusMark + this.taskName);
+    }
 }
