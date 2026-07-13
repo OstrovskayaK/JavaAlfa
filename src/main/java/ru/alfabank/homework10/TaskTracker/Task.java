@@ -19,4 +19,9 @@ public class Task {
         return this.taskStatus;
     }
 
+    // получаем ее название
+    private String getTaskName() {
+        return this.taskName;
+    }
+
 }
