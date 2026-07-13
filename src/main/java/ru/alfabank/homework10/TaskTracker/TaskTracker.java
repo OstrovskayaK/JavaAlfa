@@ -15,5 +15,15 @@ public class TaskTracker {
         tasks.add(newTask);
         System.out.println("Task " + name + " added");
     }
-
+// показываем все задачи
+    public void showAllTasks() {
+        if (tasks.isEmpty()) {
+            System.out.println("No tasks");
+            return;
+        }
+        System.out.println("Your tasks: ");
+        for (Task task : tasks) {
+            task.showTaskInfo();
+        }
+    }
 }
