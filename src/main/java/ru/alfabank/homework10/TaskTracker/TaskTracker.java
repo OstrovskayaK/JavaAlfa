@@ -26,6 +26,17 @@ public class TaskTracker {
             task.showTaskInfo();
         }
     }
+
+    //маркируем как сделанную
+    public void markAsDoneByName(String taskName) {
+        for (Task task : tasks) {
+            if (task.getTaskName().equals(taskName)){
+                task.markAsDone();
+                return;
+            }
+        }
+    }
+
     //выводим статистику
     public void showStatistics() {
         int allTasks = tasks.size();
