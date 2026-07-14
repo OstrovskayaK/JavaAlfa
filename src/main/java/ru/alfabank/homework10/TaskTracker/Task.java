@@ -10,7 +10,7 @@ public class Task {
     }
 
     // отмечаем задачу выполненной
-    private void markAsDone() {
+    public void markAsDone() {
         this.taskStatus = true;
     }
 
@@ -20,7 +20,7 @@ public class Task {
     }
 
     // получаем ее название
-    private String getTaskName() {
+    public String getTaskName() {
         return this.taskName;
     }
 
