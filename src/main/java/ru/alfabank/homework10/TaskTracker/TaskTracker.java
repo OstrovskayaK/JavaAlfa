@@ -35,6 +35,20 @@ public class TaskTracker {
                 return;
             }
         }
+        System.out.println("This task do not exist");
+    }
+
+    //получаем статус по названию
+
+    public void getStatusByName(String taskName) {
+        for (Task task : tasks) {
+            if (task.getTaskName().equals(taskName)){
+            String status = task.getStatus() ? "done" : "unfinised";
+                System.out.println("Task " + taskName + " is " + status);
+                return;
+            }
+        }
+        System.out.println("This task do not exist");
     }
 
     //выводим статистику
